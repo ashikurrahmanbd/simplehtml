@@ -1,0 +1,28 @@
+// Hero section css
+
+#hero_section{
+    padding: 50px 0;
+    .hero-elements{
+        align-items: center;
+        gap: 50px;
+    }
+    .about-me{
+      flex-basis: 50%;
+      h5{
+        font: {
+            size: 16px;
+            
+        }
+        text-transform: uppercase;
+      }
+      h2{
+        font: {
+            size: 50px;
+        }
+      }
+      
+    }
+    .my-image{
+        flex-basis: 50%;
+    }
+}

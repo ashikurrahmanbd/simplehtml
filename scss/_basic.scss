@@ -1,0 +1,86 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+// colors
+$pcolor: #eb7966;
+$scolor: #dfd8d7;
+$bgcolor: #bdacac;
+$whitecolor: #fff;
+$blkcolor: #11184f;
+$rareColor: #dfe6e9;
+
+// font weight
+$fontWSM: 400;
+$fontWMD: 600;
+$fontWXL: 800;
+
+// font preset size
+body, p{
+    font: {
+        size: 16px;
+        weight: $fontWSM;
+        family: 'poppins'
+    }
+}
+
+p{
+    margin: 0 0 15px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: $fontWMD;
+    margin: 0;
+    line-height: 1.5em;
+}
+
+// global padding
+$paddingSm: 10px 0;
+
+// main width
+$small: 200px;
+$medium: 767px;
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    @media only screen and (min-width: $small) and (max-width: $medium) {
+        width: 96%;
+    }
+}
+.inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+// social area design
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+        display: inline-block;
+    }
+}
+a{
+    transition: 0.5s;
+    text-decoration:none;
+}
+// global button
+.cta-btn{
+    margin-top: 15px;
+}
+.cta-btn a{
+    background-color: $pcolor;
+    padding: 10px 25px;
+    color: $whitecolor;
+    border-radius: 4px;
+    display: inline-block;
+    &:hover{
+        background: $blkcolor;
+    }
+}
+
+// global social 
+
+

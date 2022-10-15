@@ -1,0 +1,116 @@
+@media only screen and (min-width: $small) and (max-width: $medium) {
+    // header css
+    #header_area{
+        .top_header_area{
+               
+            .header-elements{
+                display:block;
+                position:relative;
+                .toggle-bars{
+                    display: block;
+                    position:absolute;
+                    right: 0;
+                    top: 6px;
+                    padding:2px 8px;
+                    background: $blkcolor;
+                    border-radius: 4px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                .location,
+                .email,
+                .address,
+                .Phone{
+                    display:none;
+                }
+            }
+            .social{
+                ul{
+                    text-align: center;
+                                       
+                }
+            }
+            
+        }
+
+        // main header css
+        .main-header-element{
+            display: block;
+            .logo{
+                text-align: center;
+                img{
+                    width: 70px;
+                    height: auto;
+                }
+            }
+            
+            .main-menu{
+                position: absolute;
+                left: -999999px;
+                width: 96%;
+                margin:0 2%;
+                
+                ul{
+                    background-color: $pcolor;
+
+                    li{
+                        display: block;
+                        a{
+                            color: $whitecolor;
+                        }
+                    }
+                }
+                &.open{
+                    left:0;
+                    
+                    
+                }
+
+                
+            }
+            
+        }
+    }
+
+    // hero section css
+    #hero_section{
+        padding: 50px 0 0 0; 
+        .inner{
+            flex-direction: column;
+            
+        }
+        .about-me{
+            flex-basis: 100%;; 
+            order: 2;  
+        }
+        .my-image{
+            flex-basis: 100%;
+            order: 1s;
+            text-align: center;
+            img{
+                width: 80%;
+                height: auto;
+            }
+        }
+    }
+
+
+    // about section css
+    #about_area{
+       .about-elements{
+            display:block;
+       }
+       
+    }
+
+    // service section css
+    #service_section{
+        .service-block{
+            display: block;
+            .single-service{
+                margin-bottom:20px;
+            }
+        }
+    }
+}

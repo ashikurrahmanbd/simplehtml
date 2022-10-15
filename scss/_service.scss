@@ -1,0 +1,61 @@
+// service section css
+#service_section{
+    padding: 50px 0;
+    background: $scolor;
+    .service-header{
+        text-align: center;
+        h3{
+            font: {
+                size: 60px;
+                weight: $fontWXL;
+            }
+        }
+        h5{
+            font: {
+                size: 25px;
+
+            }
+        }
+    }
+}
+
+.service-block{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    
+    .single-service{
+        background: $whitecolor;
+        padding: 25px;
+        transition: 0.5s;
+        i{
+            color: $pcolor;
+            font: {
+                size: 40px;
+            }
+            margin-bottom: 15px;
+        }
+
+        h3{
+            font: {
+                size: 25px;
+
+            }
+            color: $blkcolor;
+            text-transform: uppercase;
+        }
+        p{
+            text-align: justify;
+
+        }
+        &:hover{
+            background: $blkcolor;
+
+        }
+        &:hover h3, &:hover p{
+            color: $whitecolor;
+        }
+    }
+}

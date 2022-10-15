@@ -1,0 +1,89 @@
+// header css
+#header_area{
+    .top_header_area{
+        background: $pcolor;
+        padding: $paddingSm;
+
+        .header-elements{
+            .toggle-bars{
+                display:none;
+            }
+            flex-direction: row;
+            align-items:center;
+            i{
+                color: $whitecolor;
+            }
+            span{
+                font: {
+                    size: 14px;
+                    weight: $fontWMD;
+                }
+                color: $whitecolor;
+            }
+            
+        }
+        
+        
+        .social{
+            ul{
+                text-align: right;
+                li{
+                    margin-left: 15px;
+                }
+                a{
+                    display: block;
+                    background: $scolor;
+                    width: 40px;
+                    height: 40px;
+                    font-size: 15px;
+                    text-align: center;
+                    padding-top: 8px;
+                    border-radius: 30px;
+
+                    i{
+                        margin: 0;
+                    }
+                    &:hover{
+                        background: $blkcolor;
+                        color: $scolor;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    
+    // main header css
+    .main-header{
+        background: $rareColor;
+        .main-header-element{
+            flex-basis: row;
+            align-items:center;
+            padding: $paddingSm;
+        }
+        .logo{
+            flex-basis: 25%;
+            img{
+                width: 150px;
+                height:auto;
+            }
+        }
+        .main-menu{
+            
+            ul{
+                li{
+                    a{
+                        display: block;
+                        padding: 10px 25px;
+                        &:hover{
+                            background-color: $blkcolor;
+                            color: #fff;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
